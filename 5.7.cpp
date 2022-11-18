@@ -54,7 +54,10 @@ public:
 };
 
 int main() {
-	Time t(0, 120, 120);
+	Time t(0, 0, 0);
+	t.SetHours(5);
+	t.SetMinutes(0);
+	t.SetSeconds(50);
 cout<<t.GetTotalSeconds();
 	return 0;
 }
