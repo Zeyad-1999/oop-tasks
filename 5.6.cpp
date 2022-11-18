@@ -6,8 +6,8 @@ private:
 	int hours, minutes, seconds;
 
 public:
-	Time(int hours, int minutes, int seconds) :
-			hours(hours+(minutes/60)%24), minutes((minutes+(seconds/60))%60), seconds(seconds%60) {
+	Time(int hours, int minutes, int seconds) {
+			SetTime(hours, minutes, seconds);
 	}
 	void SetTime(int hours, int minutes, int seconds) {
 
